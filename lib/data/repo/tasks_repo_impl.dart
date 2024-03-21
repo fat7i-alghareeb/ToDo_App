@@ -1,5 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import '../models/dated_tasks.dart';
+
+import '../../shared/data/models/dated_tasks.dart';
+import '../../shared/data/models/tasks.dart';
 
 class TasksRepoImpl {
   var tasksBox = Hive.box<DatedTasks>("dated_tasks_box");
@@ -35,5 +37,6 @@ class TasksRepoImpl {
 
   void clearTasks() async {
     tasksBox.clear();
+    await Hive.openBox<Tasks>("tasks_box");
   }
 }

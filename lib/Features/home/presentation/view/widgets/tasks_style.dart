@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/Features/home/presentation/view/widgets/dialog_widget.dart';
+import 'dialog_widget.dart';
 import '../../../../../shared/cubit/tasks_cubit.dart';
 
 class TaskStyle extends StatelessWidget {

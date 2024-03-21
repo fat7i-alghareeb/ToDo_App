@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../shared/cubit/tasks_cubit.dart';
 
+import '../../../../shared/cubit/tasks_cubit.dart';
 import '../../../../shared/cubit/tasks_state.dart';
 import 'widgets/dialog_widget.dart';
 import 'widgets/tasks.dart';

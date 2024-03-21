@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'utils/service_locator.dart';
 import 'shared/data/models/tasks.dart';
 import 'theme.dart';
 import 'shared/data/models/dated_tasks.dart';
@@ -13,6 +14,8 @@ void main() async {
   Hive.registerAdapter(DatedTasksAdapter());
   Hive.registerAdapter(TasksAdapter());
   await Hive.openBox<DatedTasks>("dated_tasks_box");
+  await Hive.openBox<Tasks>("tasks_box");
+  setupServiceLocator();
 
   runApp(MyApp());
   SystemChrome.setSystemUIOverlayStyle(

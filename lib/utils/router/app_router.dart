@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo/utils/service_locator.dart';
+import '../service_locator.dart';
 
 import '../../shared/cubit/tasks_cubit.dart';
 import '../../constants.dart';
