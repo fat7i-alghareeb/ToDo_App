@@ -1,13 +1,13 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../constants.dart';
-import '../../data/models/dated_tasks.dart';
-import '../../data/models/tasks.dart';
-import '../../data/repo/tasks_repo.dart';
+import '../data/models/dated_tasks.dart';
+import '../data/models/tasks.dart';
+import '../data/repo/tasks_repo_impl.dart';
 import 'tasks_state.dart';
 
 class TasksCubit extends Cubit<TasksState> {
-  final SavedTasksRepo savedTasksRepo;
+  final TasksRepoImpl savedTasksRepo;
   List<DatedTasks> datedTasks = [];
   List<Tasks> tasks = [];
   TasksCubit(this.savedTasksRepo) : super(TasksInitial(tasks: []));

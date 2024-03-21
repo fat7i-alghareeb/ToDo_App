@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_heatmap_calendar/flutter_heatmap_calendar.dart';
-import '../../business_logic/cubit/tasks_cubit.dart';
-import '../../business_logic/cubit/tasks_state.dart';
-import '../../constants.dart';
+import '../../../../shared/cubit/tasks_cubit.dart';
+import '../../../../shared/cubit/tasks_state.dart';
+import '../../../../constants.dart';
 import 'package:flutter/services.dart';
 
 class HeatMapPage extends StatefulWidget {

@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/utils/service_locator.dart';
 
-import '../business_logic/cubit/tasks_cubit.dart';
-import '../constants.dart';
-import '../data/repo/tasks_repo.dart';
-import '../presentation/pages/pages_control.dart';
+import '../../shared/cubit/tasks_cubit.dart';
+import '../../constants.dart';
+import '../../shared/data/repo/tasks_repo_impl.dart';
+import '../../Features/navigator/presentation/view/widgets/pages_control.dart';
 
 class AppRouter {
-  late SavedTasksRepo savedTasksRepo;
-  late TasksCubit tasksCubit;
-  AppRouter() {
-    savedTasksRepo = SavedTasksRepo();
-    tasksCubit = TasksCubit(savedTasksRepo);
-  }
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case pageControlRoute:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
-            create: (context) => tasksCubit,
+            create: (context) => TasksCubit(getIt.get<TasksRepoImpl>()),
             child: const PagesController(),
           ),
         );

@@ -2,7 +2,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import '../models/dated_tasks.dart';
 import '../models/tasks.dart';
 
-class SavedTasksRepo {
+class TasksRepoImpl {
   var tasksBox = Hive.box<DatedTasks>("dated_tasks_box");
   List<DatedTasks> fetchSavedTasks({required String date}) {
     if (tasksBox.values.isEmpty || getDayIndex(date: date) == -1) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../business_logic/cubit/tasks_cubit.dart';
+import '../../shared/cubit/tasks_cubit.dart';
 
 class Test extends StatefulWidget {
   const Test({super.key});

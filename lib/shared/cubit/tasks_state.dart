@@ -1,4 +1,4 @@
-import '../../data/models/tasks.dart';
+import '../data/models/tasks.dart';
 
 sealed class TasksState {}
 

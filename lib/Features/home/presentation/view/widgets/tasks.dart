@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../business_logic/cubit/tasks_cubit.dart';
-import '../../business_logic/cubit/tasks_state.dart';
+import '../../../../../shared/cubit/tasks_cubit.dart';
+import '../../../../../shared/cubit/tasks_state.dart';
 import 'slidable.dart';
 import 'tasks_style.dart';
 

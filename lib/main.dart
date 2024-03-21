@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'data/models/tasks.dart';
+import 'shared/data/models/tasks.dart';
 import 'theme.dart';
-import 'data/models/dated_tasks.dart';
-import 'router/app_router.dart';
+import 'shared/data/models/dated_tasks.dart';
+import 'utils/router/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
