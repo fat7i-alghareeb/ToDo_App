@@ -6,16 +6,16 @@ import '../../../../../shared/cubit/tasks_state.dart';
 import 'slidable.dart';
 import 'tasks_style.dart';
 
-class Tasks extends StatefulWidget {
-  const Tasks({
+class HomeBody extends StatefulWidget {
+  const HomeBody({
     super.key,
   });
 
   @override
-  State<Tasks> createState() => _TasksState();
+  State<HomeBody> createState() => _HomeBodyState();
 }
 
-class _TasksState extends State<Tasks> {
+class _HomeBodyState extends State<HomeBody> {
   @override
   void initState() {
     BlocProvider.of<TasksCubit>(context).fetchSavedTasks();

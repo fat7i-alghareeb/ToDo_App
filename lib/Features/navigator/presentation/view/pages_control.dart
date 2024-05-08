@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import '../../../../../presentation/pages/test.dart';
-import '../../../../home/presentation/view/home_page.dart';
-import '../../../../heat map/presentation/view/heat_map_page.dart';
-import 'bottom_nav.dart';
+import '../../../../presentation/pages/test.dart';
+import '../../../home/presentation/view/home_page.dart';
+import '../../../heat map/presentation/view/heat_map_page.dart';
+import 'widgets/bottom_nav.dart';
 
 class PagesController extends StatefulWidget {
   const PagesController({super.key});

@@ -5,7 +5,7 @@ import '../service_locator.dart';
 import '../../shared/cubit/tasks_cubit.dart';
 import '../../constants.dart';
 import '../../shared/data/repo/tasks_repo_impl.dart';
-import '../../Features/navigator/presentation/view/widgets/pages_control.dart';
+import '../../Features/navigator/presentation/view/pages_control.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
